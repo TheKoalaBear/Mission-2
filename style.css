@@ -682,6 +682,10 @@ ul li span:hover {
 
 /* CLOCK */
 
+.title {
+  text-align: center;
+}
+
 .overide {
   display: flex !important;
   justify-content: space-evenly !important;

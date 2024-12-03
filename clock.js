@@ -1,17 +1,6 @@
 const targetDate = new Date();
 targetDate.setHours(targetDate.getHours() + 87);
 
-function clock() {
-  var today = new Date();
-  var hours = today.getHours();
-  var minutes = today.getMinutes();
-  var seconds = today.getSeconds();
-}
-
-console.log("Current time: " + hours + ":" + minutes + ":" + seconds);
-
-clock();
-
 function getTimeSegmentElements(segmentElement) {
   const segmentDisplay = segmentElement.querySelector(".segment-display");
   const segmentDisplayTop = segmentDisplay.querySelector(
