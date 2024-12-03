@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itinerary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">MGCD<span style="color: red">.</span></div>
+      <ul class="menu">
+        <a href="mission-one-mcgenesisd.html"><li>Home</li></a>
+        <a href="itinerary.html"><li>My Itinerary</li></a>
+        <a href="http://mgcd.link" target="_blank"><li>My Portfolio</li></a>
+        <a href="#contacts"><li>Contact</li></a>
+      </ul>
+      <div class="search">
+        <i class="fa-solid fa-torii-gate fa-beat"></i>
+      </div>
+    </header>
+
+    <main class="flex-container">
+      <section id="left">
+        <div class="container">
+          <div class="container-2">
+            <h2>Weather App &nbsp; <i class="fa-solid fa-cloud-sun"></i></h2>
+            <div class="search-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Enter your location" />
+              <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            <div class="not-found">
+              <img src="image-weather/404.png" />
+              <!-- <p>Oops! Invalid location</p> -->
+            </div>
+            <div class="weather-box">
+              <div>
+                <img src="" />
+                <p class="temp"></p>
+              </div>
+              <div><p class="descrip"></p></div>
+            </div>
+            <div class="weather-details">
+              <div class="humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text-2">
+                  <span></span>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text-2">
+                  <span></span>
+                  <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="todo-app">
+            <h2>
+              My Itinerary &nbsp; &nbsp;<i class="fa-solid fa-torii-gate"></i>
+            </h2>
+            <div class="row">
+              <input type="text" id="input-box" placeholder="Add your plan" />
+              <button onclick="addTask()">Add</button>
+            </div>
+            <div>
+              <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="right"></section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="weather-app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7fd259f44d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
