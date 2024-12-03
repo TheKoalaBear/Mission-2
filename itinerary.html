@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Itinerary</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="weather-app.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="clock.js" defer></script>
   </head>
   <body>
     <header>
@@ -76,11 +84,90 @@
           </div>
         </div>
       </section>
-      <section id="right"></section>
+      <section id="right">
+        <div
+          id="coundown"
+          style="display: flex; justify-content: space-evenly; padding-top: 20%"
+        >
+          <div class="time-section" id="hours">
+            <div class="time-group">
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Hours</p>
+          </div>
+          <div class="time-section" id="minutes">
+            <div class="time-group">
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Minutes</p>
+          </div>
+          <div class="time-section" id="seconds">
+            <div class="time-group">
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="time-segment">
+                <div class="segment-display">
+                  <div class="segment-display__top"></div>
+                  <div class="segment-display__bottom"></div>
+                  <div class="segment-overlay">
+                    <div class="segment-overlay__top"></div>
+                    <div class="segment-overlay__bottom"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Seconds</p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="script.js"></script>
-    <script src="weather-app.js"></script>
     <script
       src="https://kit.fontawesome.com/7fd259f44d.js"
       crossorigin="anonymous"
